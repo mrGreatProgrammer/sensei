@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>kawai sensei</title>
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- STYLES -->
+    <link rel="stylesheet" href="./styles/animations.css" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="./styles/main.css" />
+
+    <link rel="stylesheet" type="text/css" href="./styles/slick.css" />
+    <link rel="stylesheet" type="text/css" href="./styles/slick-theme.css" />
+
+    <!-- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/> -->
+
+    <link rel="stylesheet" href="./styles/slider.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__content--container">
+          <div class="logo__container">
+            <a class="logo--link" href="/">
+              <img
+                src="./images/logo1.png"
+                alt="logo kawai sensei"
+                class="logo"
+                width="40"
+                height="40"
+              />
+              <p class="logo__txt">kawai sensei</p>
+              <!-- <p class="logo__txt">KAWAI SENSEI</p> -->
+            </a>
+          </div>
+          <div class="nav__container">
+            <nav class="nav">
+              <ul class="nav__menu">
+                <!-- <li class="nav__item">
+                  <a href="/" class="nav__link">Главная</a>
+                </li> -->
+                <li class="nav__item">
+                  <a href="/" class="nav__link">Курсы</a>
+                </li>
+                <!-- <li class="nav__item">
+                  <a href="/" class="nav__link">Услуги и цены</a>
+                </li> -->
+                <li class="nav__item">
+                  <a href="/" class="nav__link">О преподавателе</a>
+                  <!-- <a href="/" class="nav__link">О нас</a> -->
+                </li>
+                <li class="nav__item">
+                  <a href="/" class="nav__link">Отзывы</a>
+                </li>
+                <li class="nav__item">
+                  <a href="/" class="nav__link">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <!-- <div class="contacts__container">
+            <div class="contacts">
+              <svg
+                style="margin-right: 3px; transform: rotate(0deg)"
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M1.5 4.5C1.5 3.70435 1.81607 2.94129 2.37868 2.37868C2.94129 1.81607 3.70435 1.5 4.5 1.5H5.872C6.732 1.5 7.482 2.086 7.691 2.92L8.796 7.343C8.88554 7.701 8.86746 8.07746 8.74401 8.42522C8.62055 8.77299 8.39723 9.07659 8.102 9.298L6.809 10.268C6.674 10.369 6.645 10.517 6.683 10.62C7.24738 12.1549 8.1386 13.5487 9.29495 14.7051C10.4513 15.8614 11.8451 16.7526 13.38 17.317C13.483 17.355 13.63 17.326 13.732 17.191L14.702 15.898C14.9234 15.6028 15.227 15.3794 15.5748 15.256C15.9225 15.1325 16.299 15.1145 16.657 15.204L21.08 16.309C21.914 16.518 22.5 17.268 22.5 18.129V19.5C22.5 20.2956 22.1839 21.0587 21.6213 21.6213C21.0587 22.1839 20.2956 22.5 19.5 22.5H17.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5Z"
+                  fill="#333"
+                />
+              </svg>
+              <a href="tel:+70000000000"> +7 000 000 00 00</a>
+            </div> -->
+            <div class="social__medias--container">
+              <ul class="social__medias-list">
+                <li class="social__medias-item">
+                  <a href="" class="social__medias-link">
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M12 2C14.717 2 15.056 2.01 16.122 2.06C17.187 2.11 17.912 2.277 18.55 2.525C19.21 2.779 19.766 3.123 20.322 3.678C20.8305 4.1779 21.224 4.78259 21.475 5.45C21.722 6.087 21.89 6.813 21.94 7.878C21.987 8.944 22 9.283 22 12C22 14.717 21.99 15.056 21.94 16.122C21.89 17.187 21.722 17.912 21.475 18.55C21.2247 19.2178 20.8311 19.8226 20.322 20.322C19.822 20.8303 19.2173 21.2238 18.55 21.475C17.913 21.722 17.187 21.89 16.122 21.94C15.056 21.987 14.717 22 12 22C9.283 22 8.944 21.99 7.878 21.94C6.813 21.89 6.088 21.722 5.45 21.475C4.78233 21.2245 4.17753 20.8309 3.678 20.322C3.16941 19.8222 2.77593 19.2175 2.525 18.55C2.277 17.913 2.11 17.187 2.06 16.122C2.013 15.056 2 14.717 2 12C2 9.283 2.01 8.944 2.06 7.878C2.11 6.812 2.277 6.088 2.525 5.45C2.77524 4.78218 3.1688 4.17732 3.678 3.678C4.17767 3.16923 4.78243 2.77573 5.45 2.525C6.088 2.277 6.812 2.11 7.878 2.06C8.944 2.013 9.283 2 12 2ZM12 7C10.6739 7 9.40215 7.52678 8.46447 8.46447C7.52678 9.40215 7 10.6739 7 12C7 13.3261 7.52678 14.5979 8.46447 15.5355C9.40215 16.4732 10.6739 17 12 17C13.3261 17 14.5979 16.4732 15.5355 15.5355C16.4732 14.5979 17 13.3261 17 12C17 10.6739 16.4732 9.40215 15.5355 8.46447C14.5979 7.52678 13.3261 7 12 7ZM18.5 6.75C18.5 6.41848 18.3683 6.10054 18.1339 5.86612C17.8995 5.6317 17.5815 5.5 17.25 5.5C16.9185 5.5 16.6005 5.6317 16.3661 5.86612C16.1317 6.10054 16 6.41848 16 6.75C16 7.08152 16.1317 7.39946 16.3661 7.63388C16.6005 7.8683 16.9185 8 17.25 8C17.5815 8 17.8995 7.8683 18.1339 7.63388C18.3683 7.39946 18.5 7.08152 18.5 6.75ZM12 9C12.7956 9 13.5587 9.31607 14.1213 9.87868C14.6839 10.4413 15 11.2044 15 12C15 12.7956 14.6839 13.5587 14.1213 14.1213C13.5587 14.6839 12.7956 15 12 15C11.2044 15 10.4413 14.6839 9.87868 14.1213C9.31607 13.5587 9 12.7956 9 12C9 11.2044 9.31607 10.4413 9.87868 9.87868C10.4413 9.31607 11.2044 9 12 9Z"
+                        fill="#1f1f1f"
+                      />
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__medias-item">
+                  <a href="" class="social__medias-link">
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M22 12C22 6.48 17.52 2 12 2C6.48 2 2 6.48 2 12C2 16.84 5.44 20.87 10 21.8V15H8V12H10V9.5C10 7.57 11.57 6 13.5 6H16V9H14C13.45 9 13 9.45 13 10V12H16V15H13V21.95C18.05 21.45 22 17.19 22 12Z"
+                        fill="#1f1f1f"
+                      />
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__medias-item">
+                  <a href="" class="social__medias-link">
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM16.64 8.8C16.49 10.38 15.84 14.22 15.51 15.99C15.37 16.74 15.09 16.99 14.83 17.02C14.25 17.07 13.81 16.64 13.25 16.27C12.37 15.69 11.87 15.33 11.02 14.77C10.03 14.12 10.67 13.76 11.24 13.18C11.39 13.03 13.95 10.7 14 10.49C14.0069 10.4582 14.006 10.4252 13.9973 10.3938C13.9886 10.3624 13.9724 10.3337 13.95 10.31C13.89 10.26 13.81 10.28 13.74 10.29C13.65 10.31 12.25 11.24 9.52 13.08C9.12 13.35 8.76 13.49 8.44 13.48C8.08 13.47 7.4 13.28 6.89 13.11C6.26 12.91 5.77 12.8 5.81 12.45C5.83 12.27 6.08 12.09 6.55 11.9C9.47 10.63 11.41 9.79 12.38 9.39C15.16 8.23 15.73 8.03 16.11 8.03C16.19 8.03 16.38 8.05 16.5 8.15C16.6 8.23 16.63 8.34 16.64 8.42C16.63 8.48 16.65 8.66 16.64 8.8Z"
+                        fill="#1f1f1f"
+                      />
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <!-- SECTION MAIN -->
+      <!-- SECTION MAIN -->
+      <!-- SECTION MAIN -->
+      <section id="main" class="section main__section">
+        <div class="container">
+          <div class="main__section--block__container">
+            <div class="main__section--block-left">
+              <!-- <h1>Репетитор японского языка <span>KAWAI SENSEI</span></h1> -->
+              <h1>Преподаватель японского языка <span>KAWAI SENSEI</span></h1>
+              <h2>Обучаю с нуля, сразу заговоришь на раз-два</h2>
+              <div class="slogan__txt__cotainer">
+                <p class="slogan__txt">
+                  Хотите изучить японский но не знаете с чего начать?
+                </p>
+                <!-- <p class="slogan__txt">
+                  или же вы уже самостоятельно изучаете, но понимаете что что-то не так?
+                </p> -->
+                <p class="slogan__txt">
+                  или же вы уже самостоятельно изучаете, но результатов не
+                  видно?
+                </p>
+                <p class="slogan__txt">
+                  Вы по адресу. Я обучу вас всему тому что надо!
+                </p>
+              </div>
+              <div class="main__section--btn__container">
+                <!-- <button class="main__section--btn">Записаться на курс</button> -->
+                <!-- <button class="main__section--btn">Записаться на консультацию</button> -->
+                <button class="main__section--btn btn btn-3 hover-border-4">
+                  <span> Выбрать курс </span>
+                </button>
+              </div>
+            </div>
+            <!-- <div class="main__section--block-right">
+              <div class="main__section--img__container">
+                <img
+                  src="./images/osnova-pod-makijazh-pravilnyj-makijazh-lica-12.jpg"
+                  alt=""
+                  class="main__section-img"
+                />
+              </div>
+            </div> -->
+          </div>
+        </div>
+      </section>
+      <!-- SECTION  COURSES -->
+      <!-- SECTION  COURSES -->
+      <!-- SECTION  COURSES -->
+      <section class="section courses__section">
+        <div class="container courses__section__container">
+          <h3 class="section__title">Курсы</h3>
+          <div class="courses__section--txt__container">
+            <h6 class="courses__section--txt">
+              Давно хотели изучить японский язык но не знаете с чего начать или
+              же вы уже сами пытаетесь изучать японский язык, но результатов
+              мало?!
+            </h6>
+            <h6 class="courses__section--txt">Я готова вам помочь!</h6>
+          </div>
+          <div class="courses__container">
+            <!-- ARTICLE -->
+            <article class="course__card">
+              <h5 class="course--title">Индивидуальные занятия онлайн</h5>
+              <div class="course__desc--container">
+                <!-- <dl> -->
+                <!-- <dt>Уровень:</dt> -->
+                <!-- <dt>Для кого:</dt>
+                  <dd>с нуля</dd>
+                  <dt>Возраст:</dt>
+                  <dd>для детей 7+</dd> -->
+                <!-- <dt>Что вы получите от курса:</dt> -->
+                <!-- <dt>Что вам даст курс:</dt>
+                  <dd>подготовка к JLPT N5, N4, N3</dd>
+                </dl> -->
+                <div class="course__desc--container-lists__container">
+                  <div class="course__desc--left">
+                    <ul class="course__desc--list">
+                      <!-- <li>Уровень:</li> -->
+                      <li class="course__desc-list_item">Для кого:</li>
+                      <li class="course__desc-list_item">Возраст:</li>
+                      <li class="course__desc-list_item">Цена за час:</li>
+                      <li class="course__desc-list_item">
+                        Абонемент за 8 занятый:
+                      </li>
+                      <!-- <li class="course__desc-list_item">Что вам даст курс:</li> -->
+                    </ul>
+                  </div>
+                  <div class="course__desc--right">
+                    <ul class="course__desc--list">
+                      <li class="course__desc-list_item">с нуля</li>
+                      <li class="course__desc-list_item">для детей 7+ лет</li>
+                      <li class="course__desc-list_item">1 900₽</li>
+                      <!-- <li><s>9 600 руб</s> 8 000 руб</li> -->
+                      <li class="course__desc-list_item">
+                        <p>8 000₽</p>
+                        <s>9 600₽</s>
+                      </li>
+                      <!-- <li>основы письменности, фонетики и азбуки. также подготовка к JLPT N5, N4, N3</li> -->
+                      <!-- <li class="course__desc-list_item">
+                        подготовка к JLPT N5, N4, N3
+                      </li> -->
+                    </ul>
+                  </div>
+                </div>
+                <li class="course__desc-list_item fw-600">
+                  Что вам даст курс:
+                </li>
+                <li class="course__desc-list_item">
+                  подготовка к JLPT N5, N4, N3
+                </li>
+                <!-- <p class="course__desc--txt"></p> -->
+              </div>
+              <div class="course__btns--container">
+                <!-- <button class="course__btn btn btn-2 hover-slide-right">
+                  <span>записаться на курс </span>
+                </button> -->
+                <button class="course__btn btn btn-2 hover-slide-down">
+                  <span>записаться на курс</span>
+                </button>
+                <!-- <button class="course__btn">Посмотреть отзывы о курсе</button> -->
+                <!-- <a class="course__link">Отзывы о курсе</a> -->
+              </div>
+              <!-- <button class="btn btn-2 hover-slide-down">
+                <span>hover me</span>
+              </button> -->
+            </article>
+            <!-- ARTICLE -->
+            <article class="course__card">
+              <h5 class="course--title">Для навичков "Японский для души"</h5>
+              <div class="course__desc--container">
+                <!-- <dl> -->
+                <!-- <dt>Уровень:</dt> -->
+                <!-- <dt>Для кого:</dt>
+                  <dd>с нуля</dd>
+                  <dt>Возраст:</dt>
+                  <dd>для детей 7+</dd> -->
+                <!-- <dt>Что вы получите от курса:</dt> -->
+                <!-- <dt>Что вам даст курс:</dt>
+                  <dd>подготовка к JLPT N5, N4, N3</dd>
+                </dl> -->
+                <div class="course__desc--container-lists__container">
+                  <div class="course__desc--left">
+                    <ul class="course__desc--list">
+                      <!-- <li>Уровень:</li> -->
+                      <li class="course__desc-list_item">Для кого:</li>
+                      <li class="course__desc-list_item">Возраст:</li>
+                      <!-- <li class="course__desc-list_item">Цена за час:</li> -->
+                      <li class="course__desc-list_item">
+                        Абонемент за 8 занятый:
+                      </li>
+                    </ul>
+                    <!-- <li class="course__desc-list_item">Что вам даст курс:</li> -->
+                  </div>
+                  <div class="course__desc--right">
+                    <ul class="course__desc--list">
+                      <li class="course__desc-list_item">с нуля</li>
+                      <li class="course__desc-list_item">от 12+ лет</li>
+                      <!-- <li class="course__desc-list_item">1 900 руб</li> -->
+                      <!-- <li><s>9 600 руб</s> 8 000 руб</li> -->
+                      <li class="course__desc-list_item">
+                        <p>8 000₽</p>
+                        <s>9 600₽</s>
+                      </li>
+                      <!-- <li>основы письменности, фонетики и азбуки. также подготовка к JLPT N5, N4, N3</li> -->
+                    </ul>
+                  </div>
+                </div>
+                <li class="course__desc-list_item fw-600">
+                  Что вам даст курс:
+                </li>
+                <li class="course__desc-list_item">
+                  <p>
+                    12 уроков, где мы изучаем основы письменности, фонетики и
+                    азбуки.
+                  </p>
+                  <p>
+                    К каждому уроку прилагается электронная тетрадь с конспектом
+                    занятия, домашней работой, колодой новых слов в Quizlet,
+                    прописями и доп. материалами
+                  </p>
+                </li>
+                <!-- <p class="course__desc--txt"></p> -->
+              </div>
+              <div class="course__btns--container">
+                <button class="course__btn btn btn-2 hover-slide-down">
+                  <span> записаться на курс </span>
+                </button>
+                <!-- <button class="course__btn">Посмотреть отзывы о курсе</button> -->
+                <!-- <a class="course__link">Отзывы о курсе</a> -->
+              </div>
+            </article>
+            <!-- ARTICLE -->
+            <article class="course__card">
+              <h5 class="course--title">Груповое онлайн занятия</h5>
+              <div class="course__desc--container">
+                <!-- <dl> -->
+                <!-- <dt>Уровень:</dt> -->
+                <!-- <dt>Для кого:</dt>
+                  <dd>с нуля</dd>
+                  <dt>Возраст:</dt>
+                  <dd>для детей 7+</dd> -->
+                <!-- <dt>Что вы получите от курса:</dt> -->
+                <!-- <dt>Что вам даст курс:</dt>
+                  <dd>подготовка к JLPT N5, N4, N3</dd>
+                </dl> -->
+                <div class="course__desc--container-lists__container">
+                  <div class="course__desc--left">
+                    <ul class="course__desc--list">
+                      <!-- <li>Уровень:</li> -->
+                      <li class="course__desc-list_item">Для кого:</li>
+                      <li class="course__desc-list_item">Возраст:</li>
+                      <li class="course__desc-list_item">Цена за час:</li>
+                      <li class="course__desc-list_item">
+                        Абонемент за 8 занятый:
+                      </li>
+                    </ul>
+                    <!-- <li class="course__desc-list_item">Что вам даст курс:</li> -->
+                  </div>
+                  <div class="course__desc--right">
+                    <ul class="course__desc--list">
+                      <li class="course__desc-list_item">с нуля</li>
+                      <li class="course__desc-list_item">от 7+ лет</li>
+                      <li class="course__desc-list_item">1 900₽</li>
+                      <!-- <li><s>9 600 руб</s> 8 000 руб</li> -->
+                      <li class="course__desc-list_item">
+                        <p>8 000₽</p>
+                        <s>9 600₽</s>
+                      </li>
+                      <!-- <li>основы письменности, фонетики и азбуки. также подготовка к JLPT N5, N4, N3</li> -->
+                    </ul>
+                  </div>
+                </div>
+                <li class="course__desc-list_item fw-600">
+                  Что вам даст курс:
+                </li>
+                <li class="course__desc-list_item">
+                  <p>мы изучаем основы письменности, фонетики и азбуки.</p>
+                  <!-- <p>
+                    К каждому уроку прилагается электронная тетрадь с конспектом
+                    занятия, домашней работой, колодой новых слов в Quizlet,
+                    прописями и доп. материалами
+                  </p> -->
+                </li>
+                <!-- <p class="course__desc--txt"></p> -->
+              </div>
+              <div class="course__btns--container">
+                <button class="course__btn btn btn-2 hover-slide-down">
+                  <span> записаться на курс </span>
+                </button>
+                <!-- <button class="course__btn">Посмотреть отзывы о курсе</button> -->
+                <!-- <a class="course__link">Отзывы о курсе</a> -->
+              </div>
+            </article>
+            <!-- ARTICLE -->
+            <!-- ARTICLE -->
+            <article class="course__card">
+              <h5 class="course--title">Ниндзя японского языка</h5>
+              <div class="course__desc--container">
+                <!-- <dl> -->
+                <!-- <dt>Уровень:</dt> -->
+                <!-- <dt>Для кого:</dt>
+                  <dd>с нуля</dd>
+                  <dt>Возраст:</dt>
+                  <dd>для детей 7+</dd> -->
+                <!-- <dt>Что вы получите от курса:</dt> -->
+                <!-- <dt>Что вам даст курс:</dt>
+                  <dd>подготовка к JLPT N5, N4, N3</dd>
+                </dl> -->
+                <div class="course__desc--container-lists__container">
+                  <div class="course__desc--left">
+                    <ul class="course__desc--list">
+                      <!-- <li>Уровень:</li> -->
+                      <li class="course__desc-list_item">Для кого:</li>
+                      <li class="course__desc-list_item">Возраст:</li>
+                      <!-- <li class="course__desc-list_item">Цена за час:</li> -->
+                      <li class="course__desc-list_item">
+                        Абонемент за 18 занятый:
+                      </li>
+                    </ul>
+                    <!-- <li class="course__desc-list_item">Что вам даст курс:</li> -->
+                  </div>
+                  <div class="course__desc--right">
+                    <ul class="course__desc--list">
+                      <li class="course__desc-list_item">с нуля</li>
+                      <li class="course__desc-list_item">от 12+ лет</li>
+                      <!-- <li class="course__desc-list_item">2 900₽</li> -->
+                      <!-- <li><s>9 600 руб</s> 8 000 руб</li> -->
+                      <li class="course__desc-list_item">
+                        <p>10 000₽</p>
+                        <!-- <s>9 600₽</s> -->
+                      </li>
+                      <!-- <li>основы письменности, фонетики и азбуки. также подготовка к JLPT N5, N4, N3</li> -->
+                    </ul>
+                  </div>
+                </div>
+                <li class="course__desc-list_item fw-600">
+                  Что вам даст курс:
+                </li>
+                <li class="course__desc-list_item">
+                  <p>разберём более продвинутые уровни, изучим 100 кандзи</p>
+                  <!-- <p>
+                    К каждому уроку прилагается электронная тетрадь с конспектом
+                    занятия, домашней работой, колодой новых слов в Quizlet,
+                    прописями и доп. материалами
+                  </p> -->
+                </li>
+                <!-- <p class="course__desc--txt"></p> -->
+              </div>
+              <div class="course__btns--container">
+                <button class="course__btn btn btn-2 hover-slide-down">
+                  <span> записаться на курс </span>
+                </button>
+                <!-- <button class="course__btn">Посмотреть отзывы о курсе</button> -->
+                <!-- <a class="course__link">Отзывы о курсе</a> -->
+              </div>
+            </article>
+            <!-- ARTICLE -->
+            <article class="course__card">
+              <h5 class="course--title">Бесплатное занятие за подписку</h5>
+              <div class="course__desc--container">
+                <!-- <dl> -->
+                <!-- <dt>Уровень:</dt> -->
+                <!-- <dt>Для кого:</dt>
+                  <dd>с нуля</dd>
+                  <dt>Возраст:</dt>
+                  <dd>для детей 7+</dd> -->
+                <!-- <dt>Что вы получите от курса:</dt> -->
+                <!-- <dt>Что вам даст курс:</dt>
+                  <dd>подготовка к JLPT N5, N4, N3</dd>
+                </dl> -->
+                <div class="course__desc--container-lists__container">
+                  <div class="course__desc--left">
+                    <ul class="course__desc--list">
+                      <!-- <li>Уровень:</li> -->
+                      <li class="course__desc-list_item">Для кого:</li>
+                      <li class="course__desc-list_item">Возраст:</li>
+                      <!-- <li class="course__desc-list_item">Цена за час:</li> -->
+                      <li class="course__desc-list_item">
+                        Абонемент за 18 занятый:
+                      </li>
+                    </ul>
+                    <!-- <li class="course__desc-list_item">Что вам даст курс:</li> -->
+                  </div>
+                  <div class="course__desc--right">
+                    <ul class="course__desc--list">
+                      <li class="course__desc-list_item">с нуля</li>
+                      <li class="course__desc-list_item">от 7+ лет</li>
+                      <!-- <li class="course__desc-list_item">2 900₽</li> -->
+                      <!-- <li><s>9 600 руб</s> 8 000 руб</li> -->
+                      <li class="course__desc-list_item">
+                        <p>Бесплатно</p>
+                        <!-- <s>9 600₽</s> -->
+                      </li>
+                      <!-- <li>основы письменности, фонетики и азбуки. также подготовка к JLPT N5, N4, N3</li> -->
+                    </ul>
+                  </div>
+                </div>
+                <li class="course__desc-list_item fw-600">
+                  Что вам даст курс:
+                </li>
+                <li class="course__desc-list_item">
+                  <p>даст не большой старт</p>
+                  <p>даст некоторое понимание</p>
+                  <!-- <p>
+                    К каждому уроку прилагается электронная тетрадь с конспектом
+                    занятия, домашней работой, колодой новых слов в Quizlet,
+                    прописями и доп. материалами
+                  </p> -->
+                </li>
+                <!-- <p class="course__desc--txt"></p> -->
+              </div>
+              <div class="course__btns--container">
+                <a href="" class="course__btn btn btn-2 hover-slide-down">
+                  <span> записаться на курс </span>
+                </a>
+                <!-- <button class="course__btn">Посмотреть отзывы о курсе</button> -->
+                <!-- <a class="course__link">Отзывы о курсе</a> -->
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <!-- SECTION PRICE -->
+      <!-- SECTION PRICE -->
+      <!-- SECTION PRICE -->
+      <!-- <section class="section"></section> -->
+      <!-- SECTION ABOUT -->
+      <!-- SECTION ABOUT -->
+      <!-- SECTION ABOUT -->
+      <section class="section section__aboutme">
+        <div class="container">
+          <h3 class="section__title">О преподавателе</h3>
+          <div class="section__aboutme--container">
+            <div class="section__aboutme--container-left">
+              <!-- <h5>А теперь немного обо мне</h5> -->
+              <h5>Давайте знакомиться!</h5>
+              <div class="aboutme__txt--container">
+                <div class="aboutme__content--container">
+                  <div>
+                    <p class="aboutme__txt">
+                      Меня зовут Наталья🌸 и уже 10 лет я влюблена в Японию и во
+                      всё, что с ней связано. Я шла к своей мечте, и мой путь
+                      был не всегда прост, но стоил приложенных усилий.
+                    </p>
+                    <p class="aboutme__txt">
+                      В 14 лет очень загорелась японским и начала учить язык
+                      самостоятельно. Тогда же я завела очень много
+                      друзей-японцев в соц. сетях. Мы много общались и
+                      обменивались подарками. Чуть позже пришла мысль о
+                      поступлении в университет, где смогу освоить его на
+                      профессиональном уровне, что мне в итоге успешно удалось
+                      осуществить.
+                    </p>
+                    <p class="aboutme__txt">
+                      🎓С 2016 по 2020 год училась в Сибирском Федеральном
+                      Университете на кафедре восточных языков по направлению
+                      «Лингвистика». Японский был первым языком, а вторым -
+                      английский. Закончила университет с красным дипломом📕
+                    </p>
+                    <p class="aboutme__txt">
+                      ✈️В 2019 году, на 3 курсе, полетела в Японию как студент
+                      по обмену. Жила в г. Нагоя и училась в университете
+                      愛知県立大学 (Aichi Prefectural University). Более того,
+                      мне удалось попутешествовать по Японии, посмотреть, как
+                      живут люди в разных городах. Я посетила Токио, Киото,
+                      Нара, была в префектуре Сидзуока, Гифу и Сига. Занималась
+                      икэбаной с сэнсеем. Мне также удалось даже подработать: я
+                      частно преподавала японцам английский и русский языки. А
+                      еще учила в университете испанский на японском🇪🇸
+                    </p>
+                  </div>
+                  <div
+                    class="aboutme__img--container aboutme__img--container-first"
+                  >
+                    <img
+                      class="aboutme__img"
+                      src="./images/aboutmeone.webp"
+                      alt="my"
+                    />
+                  </div>
+                </div>
+
+                <div class="aboutme__content--container">
+                  <div>
+                    <p class="aboutme__txt">
+                      👩🏼‍💻С 2020 года начала вести частную практику преподавания
+                      онлайн. Был опыт работы в онлайн-школах. Начала
+                      разрабатывать свой курс и эл.тетради. С 2022 года работаю
+                      и офлайн, преподаю в языковом центре.
+                    </p>
+                    <p class="aboutme__txt">
+                      👩🏼‍🏫В 2022 прошла переквалификацию в Сибирском институте
+                      бизнеса, управления и психологии и являюсь педагогом
+                      профессионального образования. Переквалификация позволяет
+                      мне вести педагогическую деятельность в профессиональном
+                      обучении/образовании и доп. профессиональном образовании.
+                    </p>
+                    <p class="aboutme__txt">
+                      🖌️В 2023 году прошла курс по каллиграфии, что позволило
+                      мне выйти на новую профессиональную ступень и более
+                      высокую любовь с японским.
+                    </p>
+                    <p class="aboutme__txt">
+                      Обучила уже более 50 учеников, которые благодаря нашей
+                      плодотворной работе достигают поставленных целей:
+                      отправляются в путешествие по Японии, работают с любимыми
+                      материалами - мангой, аниме, заводят друзей и просто
+                      получают удовольствие от взаимодействия с языком.
+                    </p>
+                    <p class="aboutme__txt">
+                      Буду рада стать и твоим проводником в 🇯🇵🥰
+                    </p>
+                  </div>
+                  <div
+                    class="aboutme__img--container aboutme__img--container-second"
+                  >
+                    <img
+                      class="aboutme__img"
+                      src="./images/aboutmetwo.webp"
+                      alt="my"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="section__aboutme--container-right">
+              <div class="aboutme__img--container">
+                <img
+                  class="aboutme__img"
+                  src="./images/329125999_579240967453591_2814841309248355817_n.jpg"
+                  alt="my"
+                />
+              </div>
+            </div> -->
+          </div>
+        </div>
+      </section>
+      <!-- SECTION COMMENTS -->
+      <!-- SECTION COMMENTS -->
+      <!-- SECTION COMMENTS -->
+      <section class="section section__comments">
+        <div class="container">
+          <h3 class="section__title">Отзывы</h3>
+          <div class="slider__container">
+            
+
+            <section class="center slider">
+              <div class="mySlides fade" style="width: 350px">
+                <!-- <div class="numbertext">1 / 6</div> -->
+                <img
+                  src="images/331661495_947380939960190_5779537366669217278_n.webp"
+                  style="width: 100%"
+                />
+              </div>
+
+              <div class="mySlides fade" style="width: 350px">
+                <!-- <div class="numbertext">2 / 6</div> -->
+                <img
+                  src="images/332035218_218668853962502_4324224780358075635_n.webp"
+                  style="width: 100%"
+                />
+              </div>
+
+              <div class="mySlides fade" style="width: 350px">
+                <!-- <div class="numbertext">3 / 6</div> -->
+                <img
+                  src="images/331968649_3387231824890727_3538916609245862580_n.webp"
+                  style="width: 100%"
+                />
+              </div>
+              <div class="mySlides fade" style="width: 350px">
+                <!-- <div class="numbertext">4 / 6</div> -->
+                <img
+                  src="images/332830966_516191137118532_5447268764619832121_n.webp"
+                  style="width: 100%"
+                />
+              </div>
+              <div class="mySlides fade" style="width: 350px">
+                <!-- <div class="numbertext">5 / 6</div> -->
+                <img
+                  src="images/332969676_896849844698244_9179722618711038055_n.webp"
+                  style="width: 100%"
+                />
+              </div>
+              <div class="mySlides fade" style="width: 350px">
+                <!-- <div class="numbertext">6 / 6</div> -->
+                <img
+                  src="images/332972686_593678169285627_8518622128163316652_n.webp"
+                  style="width: 100%"
+                />
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
+      <!-- SECTION CONTACTS -->
+      <!-- SECTION CONTACTS -->
+      <!-- SECTION CONTACTS -->
+      <section class="section section__contacts">
+        <div class="container">
+          <h3 class="section__title">Контакты</h3>
+          <div class="section__contacts--container"></div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <p>
+          © <time></time>
+          <span class="logo__txt footer--logo__txt">KAWAI SENSEI</span>
+        </p>
+      </div>
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-2.2.0.min.js"
+      type="text/javascript"
+    ></script>
+    <script
+      src="./scripts/slick.js"
+      type="text/javascript"
+      charset="utf-8"
+    ></script>
+
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+
+    <script src="./scripts/app.js"></script>
+  </body>
+</html>
