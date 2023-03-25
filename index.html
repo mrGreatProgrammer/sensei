@@ -19,13 +19,14 @@
     <link rel="stylesheet" href="./styles/animations.css" />
     <link rel="stylesheet" href="./styles/styles.css" />
     <link rel="stylesheet" href="./styles/main.css" />
-
+    
     <link rel="stylesheet" type="text/css" href="./styles/slick.css" />
     <link rel="stylesheet" type="text/css" href="./styles/slick-theme.css" />
-
+    
     <!-- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/> -->
-
+    
     <link rel="stylesheet" href="./styles/slider.css" />
+    <link rel="stylesheet" href="./styles/adaptive.css">
   </head>
   <body>
     <header class="header">
@@ -88,8 +89,8 @@
               </svg>
               <a href="tel:+70000000000"> +7 000 000 00 00</a>
             </div> -->
-            <div class="social__medias--container">
-              <ul class="socialMedias social__medias-list">
+            <div class="social__medias--header social__medias--container">
+              <ul style="margin-top: 7px;" class="socialMedias social__medias-list">
                 <li class="social__medias-item instagram">
                   <a href="" class="social__medias-link">
                     <svg
@@ -137,8 +138,8 @@
                 <li class="social__medias-item telegram">
                   <a href="" class="social__medias-link">
                     <svg
-                      width="28"
-                      height="28"
+                      width="24"
+                      height="24"
                       view-box="0 0 24 24"
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
@@ -153,6 +154,102 @@
                 </li>
               </ul>
             </div>
+
+            <div class="burger__container">
+              <button class="burger__btn"><span class="burger__line"></span><span class="burger__line"></span><span class="burger__line"></span></button>
+              <div class="burger__menu">
+
+              
+              <nav class="nav">
+                <ul class="nav__menu">
+                  <!-- <li class="nav__item">
+                    <a href="/" class="nav__link">Главная</a>
+                  </li> -->
+                  <li class="nav__item">
+                    <a href="/" class="nav__link">Курсы</a>
+                  </li>
+                  <!-- <li class="nav__item">
+                    <a href="/" class="nav__link">Услуги и цены</a>
+                  </li> -->
+                  <li class="nav__item">
+                    <a href="/" class="nav__link">О преподавателе</a>
+                    <!-- <a href="/" class="nav__link">О нас</a> -->
+                  </li>
+                  <li class="nav__item">
+                    <a href="/" class="nav__link">Отзывы</a>
+                  </li>
+                  <li class="nav__item">
+                    <a href="/" class="nav__link">Контакты</a>
+                  </li>
+                </ul>
+              </nav>
+              <div class="social__medias--burger social__medias--container">
+                <ul style="margin-top: 7px;" class="socialMedias social__medias-list">
+                  <li class="social__medias-item instagram">
+                    <a href="" class="social__medias-link">
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="instagramIcon"
+                      >
+                      <radialgradient style="transition: all .5s ease;" id="rg" r="150%" cx="30%" cy="107%">
+                        <stop stop-color="#fdf497" offset="0" />
+                        <stop stop-color="#fdf497" offset="0.05" />
+                        <stop stop-color="#fd5949" offset="0.45" />
+                        <stop stop-color="#d6249f" offset="0.6" />
+                        <stop stop-color="#285AEB" offset="0.9" />
+                      </radialgradient>
+                      <g clip-path="url(#clip0_3113_10)" style="transition: .5s ease;">
+                        <path
+                        style="transition: fill .5s ease;"
+                        d="M12 2C14.717 2 15.056 2.01 16.122 2.06C17.187 2.11 17.912 2.277 18.55 2.525C19.21 2.779 19.766 3.123 20.322 3.678C20.8305 4.1779 21.224 4.78259 21.475 5.45C21.722 6.087 21.89 6.813 21.94 7.878C21.987 8.944 22 9.283 22 12C22 14.717 21.99 15.056 21.94 16.122C21.89 17.187 21.722 17.912 21.475 18.55C21.2247 19.2178 20.8311 19.8226 20.322 20.322C19.822 20.8303 19.2173 21.2238 18.55 21.475C17.913 21.722 17.187 21.89 16.122 21.94C15.056 21.987 14.717 22 12 22C9.283 22 8.944 21.99 7.878 21.94C6.813 21.89 6.088 21.722 5.45 21.475C4.78233 21.2245 4.17753 20.8309 3.678 20.322C3.16941 19.8222 2.77593 19.2175 2.525 18.55C2.277 17.913 2.11 17.187 2.06 16.122C2.013 15.056 2 14.717 2 12C2 9.283 2.01 8.944 2.06 7.878C2.11 6.812 2.277 6.088 2.525 5.45C2.77524 4.78218 3.1688 4.17732 3.678 3.678C4.17767 3.16923 4.78243 2.77573 5.45 2.525C6.088 2.277 6.812 2.11 7.878 2.06C8.944 2.013 9.283 2 12 2ZM12 7C10.6739 7 9.40215 7.52678 8.46447 8.46447C7.52678 9.40215 7 10.6739 7 12C7 13.3261 7.52678 14.5979 8.46447 15.5355C9.40215 16.4732 10.6739 17 12 17C13.3261 17 14.5979 16.4732 15.5355 15.5355C16.4732 14.5979 17 13.3261 17 12C17 10.6739 16.4732 9.40215 15.5355 8.46447C14.5979 7.52678 13.3261 7 12 7ZM18.5 6.75C18.5 6.41848 18.3683 6.10054 18.1339 5.86612C17.8995 5.6317 17.5815 5.5 17.25 5.5C16.9185 5.5 16.6005 5.6317 16.3661 5.86612C16.1317 6.10054 16 6.41848 16 6.75C16 7.08152 16.1317 7.39946 16.3661 7.63388C16.6005 7.8683 16.9185 8 17.25 8C17.5815 8 17.8995 7.8683 18.1339 7.63388C18.3683 7.39946 18.5 7.08152 18.5 6.75ZM12 9C12.7956 9 13.5587 9.31607 14.1213 9.87868C14.6839 10.4413 15 11.2044 15 12C15 12.7956 14.6839 13.5587 14.1213 14.1213C13.5587 14.6839 12.7956 15 12 15C11.2044 15 10.4413 14.6839 9.87868 14.1213C9.31607 13.5587 9 12.7956 9 12C9 11.2044 9.31607 10.4413 9.87868 9.87868C10.4413 9.31607 11.2044 9 12 9Z"
+                        fill="#1f1f1f"
+                        />
+                      </g>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social__medias-item facebook">
+                    <a href="" class="social__medias-link">
+                      <svg
+                      width="25"
+                      height="25"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="facebookIcon"
+                    >
+                      <path
+                        d="M22 12C22 6.48 17.52 2 12 2C6.48 2 2 6.48 2 12C2 16.84 5.44 20.87 10 21.8V15H8V12H10V9.5C10 7.57 11.57 6 13.5 6H16V9H14C13.45 9 13 9.45 13 10V12H16V15H13V21.95C18.05 21.45 22 17.19 22 12Z"
+                        fill="#1f1f1f"
+                      />
+                    </svg>
+                    </a>
+                  </li>
+                  <li class="social__medias-item telegram">
+                    <a href="" class="social__medias-link">
+                      <svg
+                        width="24"
+                        height="24"
+                        view-box="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="telegramIcon"
+                      >
+                        <path
+                          d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM16.64 8.8C16.49 10.38 15.84 14.22 15.51 15.99C15.37 16.74 15.09 16.99 14.83 17.02C14.25 17.07 13.81 16.64 13.25 16.27C12.37 15.69 11.87 15.33 11.02 14.77C10.03 14.12 10.67 13.76 11.24 13.18C11.39 13.03 13.95 10.7 14 10.49C14.0069 10.4582 14.006 10.4252 13.9973 10.3938C13.9886 10.3624 13.9724 10.3337 13.95 10.31C13.89 10.26 13.81 10.28 13.74 10.29C13.65 10.31 12.25 11.24 9.52 13.08C9.12 13.35 8.76 13.49 8.44 13.48C8.08 13.47 7.4 13.28 6.89 13.11C6.26 12.91 5.77 12.8 5.81 12.45C5.83 12.27 6.08 12.09 6.55 11.9C9.47 10.63 11.41 9.79 12.38 9.39C15.16 8.23 15.73 8.03 16.11 8.03C16.19 8.03 16.38 8.05 16.5 8.15C16.6 8.23 16.63 8.34 16.64 8.42C16.63 8.48 16.65 8.66 16.64 8.8Z"
+                          fill="#1f1f1f"
+                        />
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
           </div>
         </div>
       </div>
@@ -222,16 +319,6 @@
             <article class="course__card">
               <h5 class="course--title">Индивидуальные занятия онлайн</h5>
               <div class="course__desc--container">
-                <!-- <dl> -->
-                <!-- <dt>Уровень:</dt> -->
-                <!-- <dt>Для кого:</dt>
-                  <dd>с нуля</dd>
-                  <dt>Возраст:</dt>
-                  <dd>для детей 7+</dd> -->
-                <!-- <dt>Что вы получите от курса:</dt> -->
-                <!-- <dt>Что вам даст курс:</dt>
-                  <dd>подготовка к JLPT N5, N4, N3</dd>
-                </dl> -->
                 <div class="course__desc--container-lists__container">
                   <div class="course__desc--left">
                     <ul class="course__desc--list">
@@ -288,16 +375,6 @@
             <article class="course__card">
               <h5 class="course--title">Для навичков "Японский для души"</h5>
               <div class="course__desc--container">
-                <!-- <dl> -->
-                <!-- <dt>Уровень:</dt> -->
-                <!-- <dt>Для кого:</dt>
-                  <dd>с нуля</dd>
-                  <dt>Возраст:</dt>
-                  <dd>для детей 7+</dd> -->
-                <!-- <dt>Что вы получите от курса:</dt> -->
-                <!-- <dt>Что вам даст курс:</dt>
-                  <dd>подготовка к JLPT N5, N4, N3</dd>
-                </dl> -->
                 <div class="course__desc--container-lists__container">
                   <div class="course__desc--left">
                     <ul class="course__desc--list">
@@ -353,16 +430,6 @@
             <article class="course__card">
               <h5 class="course--title">Груповое онлайн занятия</h5>
               <div class="course__desc--container">
-                <!-- <dl> -->
-                <!-- <dt>Уровень:</dt> -->
-                <!-- <dt>Для кого:</dt>
-                  <dd>с нуля</dd>
-                  <dt>Возраст:</dt>
-                  <dd>для детей 7+</dd> -->
-                <!-- <dt>Что вы получите от курса:</dt> -->
-                <!-- <dt>Что вам даст курс:</dt>
-                  <dd>подготовка к JLPT N5, N4, N3</dd>
-                </dl> -->
                 <div class="course__desc--container-lists__container">
                   <div class="course__desc--left">
                     <ul class="course__desc--list">
@@ -416,16 +483,6 @@
             <article class="course__card">
               <h5 class="course--title">Ниндзя японского языка</h5>
               <div class="course__desc--container">
-                <!-- <dl> -->
-                <!-- <dt>Уровень:</dt> -->
-                <!-- <dt>Для кого:</dt>
-                  <dd>с нуля</dd>
-                  <dt>Возраст:</dt>
-                  <dd>для детей 7+</dd> -->
-                <!-- <dt>Что вы получите от курса:</dt> -->
-                <!-- <dt>Что вам даст курс:</dt>
-                  <dd>подготовка к JLPT N5, N4, N3</dd>
-                </dl> -->
                 <div class="course__desc--container-lists__container">
                   <div class="course__desc--left">
                     <ul class="course__desc--list">
@@ -478,16 +535,6 @@
             <article class="course__card">
               <h5 class="course--title">Бесплатное занятие за подписку</h5>
               <div class="course__desc--container">
-                <!-- <dl> -->
-                <!-- <dt>Уровень:</dt> -->
-                <!-- <dt>Для кого:</dt>
-                  <dd>с нуля</dd>
-                  <dt>Возраст:</dt>
-                  <dd>для детей 7+</dd> -->
-                <!-- <dt>Что вы получите от курса:</dt> -->
-                <!-- <dt>Что вам даст курс:</dt>
-                  <dd>подготовка к JLPT N5, N4, N3</dd>
-                </dl> -->
                 <div class="course__desc--container-lists__container">
                   <div class="course__desc--left">
                     <ul class="course__desc--list">
@@ -519,8 +566,9 @@
                   Что вам даст курс:
                 </li>
                 <li class="course__desc-list_item">
-                  <p>даст не большой старт</p>
-                  <p>даст некоторое понимание</p>
+                  <!-- <p>даст не большой старт</p>
+                  <p>даст некоторое понимание</p> -->
+                  <p>Подпишись на мой блог в инстаграмме и получи ознакомительный курс</p>
                   <!-- <p>
                     К каждому уроку прилагается электронная тетрадь с конспектом
                     занятия, домашней работой, колодой новых слов в Quizlet,
@@ -719,7 +767,79 @@
       <section class="section section__contacts">
         <div class="container">
           <h3 class="section__title">Контакты</h3>
-          <div class="section__contacts--container"></div>
+          <div class="section__contacts--container">
+            <div class="section__cotacts--left">
+              <h5>Мои соц-сети:</h5>
+              <div class="social__medias--container">
+                <ul style="margin-top: 7px;" class="socialMedias social__medias-list">
+                  <li class="social__medias-item instagram">
+                    <a href="" class="social__medias-link">
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="instagramIcon"
+                      >
+                      <radialgradient style="transition: all .5s ease;" id="rg" r="150%" cx="30%" cy="107%">
+                        <stop stop-color="#fdf497" offset="0" />
+                        <stop stop-color="#fdf497" offset="0.05" />
+                        <stop stop-color="#fd5949" offset="0.45" />
+                        <stop stop-color="#d6249f" offset="0.6" />
+                        <stop stop-color="#285AEB" offset="0.9" />
+                      </radialgradient>
+                      <g clip-path="url(#clip0_3113_10)" style="transition: .5s ease;">
+                        <path
+                        style="transition: fill .5s ease;"
+                        d="M12 2C14.717 2 15.056 2.01 16.122 2.06C17.187 2.11 17.912 2.277 18.55 2.525C19.21 2.779 19.766 3.123 20.322 3.678C20.8305 4.1779 21.224 4.78259 21.475 5.45C21.722 6.087 21.89 6.813 21.94 7.878C21.987 8.944 22 9.283 22 12C22 14.717 21.99 15.056 21.94 16.122C21.89 17.187 21.722 17.912 21.475 18.55C21.2247 19.2178 20.8311 19.8226 20.322 20.322C19.822 20.8303 19.2173 21.2238 18.55 21.475C17.913 21.722 17.187 21.89 16.122 21.94C15.056 21.987 14.717 22 12 22C9.283 22 8.944 21.99 7.878 21.94C6.813 21.89 6.088 21.722 5.45 21.475C4.78233 21.2245 4.17753 20.8309 3.678 20.322C3.16941 19.8222 2.77593 19.2175 2.525 18.55C2.277 17.913 2.11 17.187 2.06 16.122C2.013 15.056 2 14.717 2 12C2 9.283 2.01 8.944 2.06 7.878C2.11 6.812 2.277 6.088 2.525 5.45C2.77524 4.78218 3.1688 4.17732 3.678 3.678C4.17767 3.16923 4.78243 2.77573 5.45 2.525C6.088 2.277 6.812 2.11 7.878 2.06C8.944 2.013 9.283 2 12 2ZM12 7C10.6739 7 9.40215 7.52678 8.46447 8.46447C7.52678 9.40215 7 10.6739 7 12C7 13.3261 7.52678 14.5979 8.46447 15.5355C9.40215 16.4732 10.6739 17 12 17C13.3261 17 14.5979 16.4732 15.5355 15.5355C16.4732 14.5979 17 13.3261 17 12C17 10.6739 16.4732 9.40215 15.5355 8.46447C14.5979 7.52678 13.3261 7 12 7ZM18.5 6.75C18.5 6.41848 18.3683 6.10054 18.1339 5.86612C17.8995 5.6317 17.5815 5.5 17.25 5.5C16.9185 5.5 16.6005 5.6317 16.3661 5.86612C16.1317 6.10054 16 6.41848 16 6.75C16 7.08152 16.1317 7.39946 16.3661 7.63388C16.6005 7.8683 16.9185 8 17.25 8C17.5815 8 17.8995 7.8683 18.1339 7.63388C18.3683 7.39946 18.5 7.08152 18.5 6.75ZM12 9C12.7956 9 13.5587 9.31607 14.1213 9.87868C14.6839 10.4413 15 11.2044 15 12C15 12.7956 14.6839 13.5587 14.1213 14.1213C13.5587 14.6839 12.7956 15 12 15C11.2044 15 10.4413 14.6839 9.87868 14.1213C9.31607 13.5587 9 12.7956 9 12C9 11.2044 9.31607 10.4413 9.87868 9.87868C10.4413 9.31607 11.2044 9 12 9Z"
+                        fill="#1f1f1f"
+                        />
+                      </g>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social__medias-item facebook">
+                    <a href="" class="social__medias-link">
+                      <svg
+                      width="25"
+                      height="25"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="facebookIcon"
+                    >
+                      <path
+                        d="M22 12C22 6.48 17.52 2 12 2C6.48 2 2 6.48 2 12C2 16.84 5.44 20.87 10 21.8V15H8V12H10V9.5C10 7.57 11.57 6 13.5 6H16V9H14C13.45 9 13 9.45 13 10V12H16V15H13V21.95C18.05 21.45 22 17.19 22 12Z"
+                        fill="#1f1f1f"
+                      />
+                    </svg>
+                    </a>
+                  </li>
+                  <li class="social__medias-item telegram">
+                    <a href="" class="social__medias-link">
+                      <svg
+                        width="24"
+                        height="24"
+                        view-box="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="telegramIcon"
+                      >
+                        <path
+                          d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM16.64 8.8C16.49 10.38 15.84 14.22 15.51 15.99C15.37 16.74 15.09 16.99 14.83 17.02C14.25 17.07 13.81 16.64 13.25 16.27C12.37 15.69 11.87 15.33 11.02 14.77C10.03 14.12 10.67 13.76 11.24 13.18C11.39 13.03 13.95 10.7 14 10.49C14.0069 10.4582 14.006 10.4252 13.9973 10.3938C13.9886 10.3624 13.9724 10.3337 13.95 10.31C13.89 10.26 13.81 10.28 13.74 10.29C13.65 10.31 12.25 11.24 9.52 13.08C9.12 13.35 8.76 13.49 8.44 13.48C8.08 13.47 7.4 13.28 6.89 13.11C6.26 12.91 5.77 12.8 5.81 12.45C5.83 12.27 6.08 12.09 6.55 11.9C9.47 10.63 11.41 9.79 12.38 9.39C15.16 8.23 15.73 8.03 16.11 8.03C16.19 8.03 16.38 8.05 16.5 8.15C16.6 8.23 16.63 8.34 16.64 8.42C16.63 8.48 16.65 8.66 16.64 8.8Z"
+                          fill="#1f1f1f"
+                        />
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="section__cotacts--right">
+
+            </div>
+          </div>
         </div>
       </section>
     </main>

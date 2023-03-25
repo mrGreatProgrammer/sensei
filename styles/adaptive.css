@@ -1,0 +1,75 @@
+@media screen and (max-width: 768px) {
+  .nav__container {
+    display: none;
+  }
+
+  .social__medias--header {
+    display: none;
+  }
+  .burger__container{
+    display: block;
+  }
+  .burger__btn {
+    width: 45px;
+    height: 45px;
+    background: #000;
+    background: transparent;
+    position: relative;
+    border: none;
+  }
+  .burger__line {
+    left: 0;
+    position: absolute;
+    width: 45px;
+    height: 3px;
+    background: #1f1f1f;
+    /* background: #fff; */
+    border-radius: 12px;
+  }
+  .burger__line:first-child{
+    top: 7px;
+  }
+  .burger__line:nth-child(2){
+    top: 20.5px;
+  }
+  .burger__line:last-child{
+    top: 34px;
+  }
+  .burger__menu {
+    display: none;
+  }
+
+
+  /* SECTION ABOUTME */
+
+  .aboutme__content--container {
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 35px 0px;
+    align-items: center;
+    /* justify-content: center; */
+  }
+  .aboutme__content--container:nth-child(2) {
+    flex-direction: column-reverse;
+  }
+  .aboutme__img--container {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .aboutme__img--container-first {
+    margin-left: 0px;
+  }
+  .aboutme__img--container-second {
+    margin-right: 0px;
+  }
+  .slick-prev{
+    width: 22px;
+    left: -13px;
+    display: none;
+  }
+  .slick-next{
+    width: 22px;
+    right: -13px;
+    display: none;
+  }
+}
