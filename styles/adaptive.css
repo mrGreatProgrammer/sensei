@@ -6,7 +6,7 @@
   .social__medias--header {
     display: none;
   }
-  .burger__container{
+  .burger__container {
     display: block;
   }
   .burger__btn {
@@ -25,20 +25,98 @@
     background: #1f1f1f;
     /* background: #fff; */
     border-radius: 12px;
+    transition: .7s ease;
   }
-  .burger__line:first-child{
+  .burger__line:first-child {
     top: 7px;
   }
-  .burger__line:nth-child(2){
+  .burger__line:nth-child(2) {
     top: 20.5px;
   }
-  .burger__line:last-child{
+  .burger__line:last-child {
     top: 34px;
   }
   .burger__menu {
-    display: none;
   }
 
+  .burger__btn--closed {
+  }
+  .burger__btn--opened {
+  }
+  .burger__btn--opened>.burger__line:first-child {
+    transform: rotate(45deg);
+    top: 20.5px;
+  }
+  .burger__btn--opened>.burger__line:nth-child(2) {
+    width: 0;
+  }
+  .burger__btn--opened>.burger__line:last-child {
+    top: 20.5px;
+    transform: rotate(-45deg);
+  }
+  .burger__menu--closed {
+    display: none;
+  }
+  .burger__menu--opened {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: 100%;
+    height: 90vh;
+    position: fixed;
+    top: 95px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    z-index: 101;
+    /* From https://css.glass */
+    background: rgba(216, 246, 246, 0.78);
+    /* border-radius: 16px; */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8.8px);
+    -webkit-backdrop-filter: blur(10.6px);
+    border: 1px solid rgba(216, 246, 246, 0.95);
+  }
+
+  .nav {
+  }
+  .nav__menu {
+    flex-direction: column;
+    align-items: center;
+  }
+  .nav__item {
+    margin-right: 0;
+    margin: 15px 0;
+  }
+  .nav__link {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  /* SECTION MAIN */
+  .main__section--block-left > h1 {
+    font-size: 38px;
+    line-height: 42px;
+    margin-bottom: 35px;
+  }
+  .main__section--block-left > h1 > span {
+    font-size: 38px;
+    line-height: 42px;
+  }
+
+  /* SECTION COURSES */
+  .courses__container {
+    justify-content: center;
+    align-items: start;
+  }
+  .course__card {
+    margin-right: 0px;
+  }
 
   /* SECTION ABOUTME */
 
@@ -62,12 +140,12 @@
   .aboutme__img--container-second {
     margin-right: 0px;
   }
-  .slick-prev{
+  .slick-prev {
     width: 22px;
     left: -13px;
     display: none;
   }
-  .slick-next{
+  .slick-next {
     width: 22px;
     right: -13px;
     display: none;

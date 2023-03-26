@@ -87,7 +87,12 @@
 .burger__container{
   display: none;
 }
-
+.burger__menu--closed{
+  display: none;  
+}
+.burger__menu--opened{
+  display: none;
+}
 
 
 /* MAIN */
@@ -201,6 +206,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
+  justify-content: start;
   margin: 25px 0;
 }
 .course__card {

@@ -54,6 +54,8 @@ s{
   /* width: 35px; */
   /* height: 35px; */
 }
+.socialMedias > li > a > svg {
+}
 .socialMedias > li > a > svg > path {
   fill: #1f1f1f;
   transition: all 0.6s ease-out;
