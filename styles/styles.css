@@ -41,9 +41,24 @@ s{
   color: #555;
 }
 
-
-
-
+button:focus{
+  outline-style: solid;
+  outline-offset: 1px;
+  outline-width: 3px;
+  outline-color: #555;
+}
+fieldset{
+  border: 1px solid #f1f1f1;
+  padding: 15px;
+  padding-bottom: 35px;
+  border-radius: 8px;
+}
+legend{
+  font-size: 20px;
+  font-weight: 500;
+  margin: 0 auto;
+  /* margin-left: 10px; */
+}
 
 
 
@@ -97,3 +112,8 @@ s{
 
 
 
+@media screen and (max-width: 768px) {
+ legend{
+  font-size: 18px;
+ } 
+}

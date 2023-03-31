@@ -1,8 +1,8 @@
 :active,
 :hover,
 :focus {
-  outline: 0 !important;
-  outline-offset: 0;
+  /* outline: 0 !important;
+  outline-offset: 0; */
 }
 ::before,
 ::after {
@@ -297,15 +297,16 @@
   height: 0%;
   opacity: 0;
   transition: width 0.2s linear, height 0.15s 0.2s ease-out, opacity 0s 0.35s;
+  border-radius: 8px;
 }
 .btn.hover-border-4::before {
-  bottom: 0;
+  bottom: 0.5px;
   left: -1px;
   border-top: 3px solid #ec4a42;
   border-left: 3px solid #ec4a42;
 }
 .btn.hover-border-4::after {
-  top: 0;
+  top: 0.5px;
   right: 0;
   border-bottom: 3px solid #ec4a42;
   border-right: 3px solid #ec4a42;
