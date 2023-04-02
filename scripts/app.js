@@ -4,15 +4,56 @@ const currentDate = new Date().getFullYear();
 currentYearEl.textContent = currentDate;
 
 // SLIDER
+// $(".center").slick({
+//   dots: true,
+//   infinite: true,
+//   centerMode: true,
+//   slidesToShow: 3,
+//   slidesToScroll: 3,
+//   autoplay: true,
+//   autoplaySpeed: 2500,
+//   variableWidth: true,
+// });
+
 $(".center").slick({
-  dots: true,
-  infinite: true,
   centerMode: true,
+  centerPadding: "60px",
   slidesToShow: 3,
-  slidesToScroll: 3,
   autoplay: true,
   autoplaySpeed: 2500,
   variableWidth: true,
+  slidesToScroll: 1,
+  responsive: [
+    {
+      breakpoint: 1440,
+      settings: {
+        arrows: true,
+        centerMode: true,
+        centerPadding: "40px",
+        slidesToShow: 3,
+
+      },
+    },
+    {
+      breakpoint: 968,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: "40px",
+        slidesToShow: 3,
+      },
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: "40px",
+        slidesToShow: 1,
+        arrows: false,
+      },
+    },
+  ],
 });
 
 const burgerBtn = document.querySelector(".burger__btn");
@@ -32,5 +73,4 @@ function toggleVisibleBurger() {
     burgerBtn.classList.remove("burger__btn--closed");
     burgerMenu.classList.remove("burger__menu--closed");
   }
-  console.log("clicked");
 }

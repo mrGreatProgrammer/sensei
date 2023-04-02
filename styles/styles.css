@@ -33,37 +33,32 @@ a:hover {
   flex-direction: column;
 }
 
-.fw-600{
+.fw-600 {
   font-weight: 600;
 }
-s{
+s {
   font-size: 11px;
   color: #555;
 }
 
-button:focus{
+button:focus {
   outline-style: solid;
   outline-offset: 1px;
   outline-width: 3px;
   outline-color: #555;
 }
-fieldset{
+fieldset {
   border: 1px solid #f1f1f1;
   padding: 15px;
   padding-bottom: 35px;
   border-radius: 8px;
 }
-legend{
-  font-size: 20px;
-  font-weight: 500;
+legend {
+  font-size: 22px;
+  font-weight: 600;
   margin: 0 auto;
   /* margin-left: 10px; */
 }
-
-
-
-
-
 
 .socialMedias > li {
   /* width: 35px; */
@@ -98,7 +93,7 @@ legend{
   cursor: pointer;
 }
 .instagram:hover > a > .instagramIcon > g > path {
-  transition: .5s ease;
+  transition: 0.5s ease;
   fill: url(#rg);
 }
 .telegram:hover {
@@ -111,9 +106,8 @@ legend{
 
 
 
-
 @media screen and (max-width: 768px) {
- legend{
-  font-size: 18px;
- } 
+  legend {
+    font-size: 18px;
+  }
 }

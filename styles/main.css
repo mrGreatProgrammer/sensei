@@ -127,14 +127,11 @@
 .main__section--block-left {
 }
 .main__section--block-left > h1 {
-  color: #1f1f1f;
   color: #fff;
   font-size: 48px;
   line-height: 42px;
   font-weight: 700;
-  /* margin-top: 115px; */
   margin-top: 25px;
-
   margin-bottom: 45px;
 }
 .main__section--block-left > h1 > span {
@@ -198,9 +195,6 @@
 .courses__section--txt {
 }
 .courses__container {
-  /* display: grid;
-  grid-template-columns: 491px;
-  grid-template-rows: 316px; */
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -209,9 +203,6 @@
   margin: 25px 0;
 }
 .course__card {
-  /* display: flex;
-  flex-direction: column; */
-
   width: 375px;
   height: 475px;
   margin-top: 10px;
@@ -292,10 +283,7 @@
 
 /* SECTION ABOUTME */
 .section__aboutme {
-  /* background-blend-mode: soft-light; */
-  /* margin: 45px 0; */
   padding: 85px 0;
-  /* background: url(../images/bbg.png), #f1f1f1; */
 }
 
 .section__aboutme--container {
@@ -376,6 +364,7 @@
 .section__cotacts--left {
   margin-top: 10px;
   margin-bottom: 0;
+  margin-right: 10px;
 }
 .section__cotacts--left > h5 {
   margin: 10px 0 18px 0;
@@ -430,7 +419,7 @@ textarea {
 .contacts__form--btn__container {
 }
 .btn__form {
-  /* background: #ec4a42; */
+  min-width: 280px;
 }
 
 /* FOOTER */
