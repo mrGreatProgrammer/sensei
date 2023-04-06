@@ -8,6 +8,8 @@
   font-family: "Montserrat", sans-serif;
   scroll-behavior: smooth;
 }
+/* body {
+} */
 ul,
 li {
   list-style: none;
@@ -60,10 +62,6 @@ legend {
   /* margin-left: 10px; */
 }
 
-.socialMedias > li {
-  /* width: 35px; */
-  /* height: 35px; */
-}
 .socialMedias > li > a > svg {
 }
 .socialMedias > li > a > svg > path {
@@ -102,9 +100,6 @@ legend {
 .telegram:hover > a > .telegramIcon > path {
   fill: #08c;
 }
-
-
-
 
 @media screen and (max-width: 768px) {
   legend {
