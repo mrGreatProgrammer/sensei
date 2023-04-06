@@ -132,7 +132,22 @@
   }
   .burger__menu {
   }
-
+  .nav__menu {
+    flex-direction: column;
+    align-items: center;
+  }
+  .nav__item {
+    margin-right: 0;
+    margin: 15px 0;
+  }
+  .nav__link {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .social__medias--burger{
+    padding-bottom: 8px;
+  }
   .burger__btn--closed {
   }
   .burger__btn--opened {
@@ -157,11 +172,11 @@
     align-items: center;
     justify-content: space-between;
     padding-top: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 55px;
     width: 100%;
     height: 90vh;
     position: fixed;
-    top: 95px;
+    top: 75px;
     left: 0;
     right: 0;
     bottom: 0;
@@ -177,6 +192,10 @@
   }
 
   /* MAIN SECTION */
+  .section__title {
+    font-size: 34px;
+    line-height: 36px;
+  }
   .main__section--block-left > h1 {
     font-size: 32px;
     line-height: 40px;
@@ -188,7 +207,7 @@
     line-height: 40px;
   }
   .main__section--block-left > h2 {
-    margin-bottom: 35px;
+    margin-bottom: 36px;
     font-size: 22px;
   }
   .slogan__txt {
@@ -197,22 +216,22 @@
   .main__section--btn > span {
     font-size: 14px;
   }
-    /* SECTION COURSES */
-    .courses__container {
-      justify-content: start;
-      align-items: start;
-    }
-    .course__card {
-      width: 325px;
-      margin-right: 15px;
-      padding: 20px 10px;
-    }
-    /* SECTION ABOUTME */
-  .aboutme__content--container{
+  /* SECTION COURSES */
+  .courses__container {
+    justify-content: start;
+    align-items: start;
+  }
+  .course__card {
+    width: 325px;
+    margin-right: 15px;
+    padding: 20px 10px;
+  }
+  /* SECTION ABOUTME */
+  .aboutme__content--container {
     flex-direction: column;
     align-items: center;
   }
-  .aboutme__content--container:nth-child(2){
+  .aboutme__content--container:nth-child(2) {
     flex-direction: column;
   }
   .section__contacts--container {
@@ -237,25 +256,22 @@
 }
 
 @media screen and (max-width: 768px) {
-  .nav__menu {
-    flex-direction: column;
-    align-items: center;
+  .header__content--container{
+    padding: 13px 0;
   }
-  .nav__item {
-    margin-right: 0;
-    margin: 15px 0;
+  .burger__menu--opened{
+    top: 72px;
+    margin-bottom: 60px;
   }
-  .nav__link {
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 24px;
-  }
-
   /* SECTION MAIN */
+  .section__title {
+    font-size: 32px;
+    line-height: 34px;
+  }
   .main__section--block-left > h1 {
     font-size: 38px;
     line-height: 42px;
-    margin-bottom: 35px;
+    margin-bottom: 32px;
   }
   .main__section--block-left > h1 > span {
     font-size: 38px;
@@ -316,20 +332,32 @@
   }
 }
 
-@media screen and (max-width: 735px){
-  .main__section--block-left > h1{
+@media screen and (max-width: 735px) {
+  .header__content--container{
+    padding: 10px 0;
+  }
+  .burger__menu--opened{
+    top: 66px;
+    margin-bottom: 60px;
+  }
+  .section__title {
+    font-size: 30px;
+    line-height: 32px;
+  }
+  .main__section--block-left > h1 {
+    font-size: 30px;
+    line-height: 36px;
+    margin-bottom: 28px;
+  }
+  .main__section--block-left > h1 > span {
     font-size: 32px;
     line-height: 38px;
   }
-  .main__section--block-left > h1 > span {
-    font-size: 34px;
-    line-height: 42px;
+  .main__section--block-left > h2 {
+    margin-bottom: 33px;
+    font-size: 21px;
   }
-  .main__section--block-left > h2{
-    margin-bottom: 45px;
-  font-size: 22px;
-  }
-  .slogan__txt{
+  .slogan__txt {
     font-size: 14px;
     line-height: 20px;
   }
@@ -347,13 +375,41 @@
     line-height: 24px;
     height: 50px;
   }
+  .aboutme__txt {
+    font-size: 14px;
+  }
 }
 
-
-
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 400px) {
+  .section__title {
+    font-size: 27px;
+    line-height: 30px;
+  }
   .main__section--block-left > h1 {
-    font-size: 32px;
-    line-height: 36px;
+    font-size: 26px;
+    line-height: 30px;
+    margin-bottom: 26px;
+  }
+  .main__section--block-left > h1 > span {
+    font-size: 28px;
+    line-height: 32px;
+  }
+  .main__section--block-left > h2 {
+    margin-bottom: 32px;
+    font-size: 19px;
+  }
+}
+@media screen and (max-width: 378px) {
+  .section__title {
+    font-size: 25px;
+    line-height: 28px;
+  }
+  .main__section--block-left > h1 {
+    font-size: 25px;
+    line-height: 28px;
+  }
+  .main__section--block-left > h1 > span {
+    font-size: 27px;
+    line-height: 30px;
   }
 }
