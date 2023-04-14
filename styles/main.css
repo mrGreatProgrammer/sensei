@@ -5,6 +5,9 @@
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(11.5px);
   -webkit-backdrop-filter: blur(11.5px);
+  -moz-backdrop-filter: blur(11.5px);
+  -o-backdrop-filter: blur(11.5px);
+  -ms-backdrop-filter: blur(11.5px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.35);
   position: fixed;
   width: 100%;
