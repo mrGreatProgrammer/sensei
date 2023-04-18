@@ -683,3 +683,100 @@
 .btn.hover-border-11 span:hover::after {
   height: 0%;
 }
+
+
+/* FLIP CARD */
+.card {
+  width: 320px;
+  height: 470px;
+  position: relative;
+  perspective: 1000px;
+}
+.front,
+.back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  transition: 1s;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  
+
+  /* From https://css.glass */
+  /* background: rgba(255, 255, 255, 0.6);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10.9px);
+  -webkit-backdrop-filter: blur(10.9px);
+  border: 1px solid rgba(255, 255, 255, 1); */
+  background: rgba(255, 255, 255, 0);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6.2px);
+  -webkit-backdrop-filter: blur(1.2px);
+  border: 1px solid rgba(255, 255, 255, 0.85);
+}
+.front {
+  /* background-color: #333; */
+  color: #333;
+}
+.back {
+  /* background-color: #bdbdbd; */
+  transform: rotateY(180deg);
+}
+.card:hover .front {
+  transform: rotateY(180deg);
+}
+.card:hover .back {
+  transform: rotateY(360deg);
+}
+.course__card-inner{
+  padding: 25px 15px;
+}
+.img__container {
+  display: flex;
+  justify-content: center;
+}
+.course__card-img {
+  border-radius: 15px 15px 0px 0px;
+  width: 100%;
+  height: 270px;
+}
+.text__container {
+  padding: 3px 10px;
+  height: 170px;
+}
+.price_txt {
+  margin: 15px 0;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.card--btn__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+.card--btn__container > button {
+  text-transform: uppercase;
+  font-size: 14px;
+  padding: 7px 15px;
+  border-radius: 8px;
+}
+.card--btn-more_info {
+  border: 1px solid #333;
+  color: #333;
+}
+.card--btn-start_learing {
+  background: #333;
+  border: 1px solid #333;
+  color: #fff;
+}
+.back_card-inner {
+  padding: 10px;
+}

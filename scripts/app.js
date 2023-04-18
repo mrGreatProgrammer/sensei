@@ -31,7 +31,6 @@ $(".center").slick({
         centerMode: true,
         centerPadding: "40px",
         slidesToShow: 3,
-
       },
     },
     {
