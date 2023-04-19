@@ -242,7 +242,9 @@
   padding: 0 15px;
 }
 .course__card--btn__more{
-  
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .course--title {
   font-size: 22px;
