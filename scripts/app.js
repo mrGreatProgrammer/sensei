@@ -73,3 +73,55 @@ function toggleVisibleBurger() {
     burgerMenu.classList.remove("burger__menu--closed");
   }
 }
+
+
+// MODALS
+const modalOverlay = document.querySelector(".modal-overlay");
+const modals = document.querySelectorAll(".modal");
+const cancelBtn = document.querySelectorAll(".btn__exit");
+
+const modalBtns = document.querySelectorAll(".modalBtn");
+
+modalBtns.forEach((el) => {
+  el.addEventListener("click", (e) => {
+    let path = e.currentTarget.getAttribute("data-path");
+
+    modals.forEach((el) => {
+      el.classList.remove("modal--visible");
+    });
+
+    document
+      .querySelector(`[data-target='${path}']`)
+      .classList.add("modal--visible");
+    modalOverlay.classList.add("modal-overlay--visible");
+  });
+});
+
+modalOverlay.addEventListener("click", (e) => {
+  console.log(e.target);
+
+  if (e.target == modalOverlay) {
+    modalOverlay.classList.remove("modal-overlay--visible");
+    modals.forEach((el) => {
+      el.classList.remove("modal--visible");
+    });
+  }
+});
+
+document.addEventListener("keydown", (e) => {
+  if (e.code == "Escape") {
+    modalOverlay.classList.remove("modal-overlay--visible");
+    modals.forEach((el) => {
+      el.classList.remove("modal--visible");
+    });
+  }
+});
+
+cancelBtn.forEach((canc) => {
+  canc.addEventListener("click", () => {
+    modalOverlay.classList.remove("modal-overlay--visible");
+    modals.forEach((el) => {
+      el.classList.remove("modal--visible");
+    });
+  });
+});

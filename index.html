@@ -468,7 +468,7 @@
                 <!-- <button class="course__btn btn btn-2 hover-slide-right">
                   <span>записаться на курс </span>
                 </button> -->
-                <button class="course__btn btn btn-2 hover-slide-down">
+                <button data-path="lesson-1" class="course__btn btn btn-2 hover-slide-down modalBtn">
                   <span>записаться на курс</span>
                 </button>
                 <!-- <button class="course__btn">Посмотреть отзывы о курсе</button> -->
@@ -487,12 +487,12 @@
 
                 <div class="course__card-inner-txt">
 
-              <h5 class="course--title">Для навичков "Японский для души"</h5>
+                <h5 class="course--title">Для навичков "Японский для души"</h5>
 
                   </div>
                   <div class="course__card-front-btn__container" >
 
-                    <button class="btn btn-3 hover-slide-right course__card--btn__more" >Подробнее<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6" width="17" >
+                    <button data-path="lesson-2" class="btn btn-3 hover-slide-right course__card--btn__more" >Подробнее<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6" width="17" >
                       <path fill-rule="evenodd" d="M16.72 7.72a.75.75 0 011.06 0l3.75 3.75a.75.75 0 010 1.06l-3.75 3.75a.75.75 0 11-1.06-1.06l2.47-2.47H3a.75.75 0 010-1.5h16.19l-2.47-2.47a.75.75 0 010-1.06z" clip-rule="evenodd" />
                     </svg>
                     </button>
@@ -549,7 +549,7 @@
                 <!-- <p class="course__desc--txt"></p> -->
               </div>
               <div class="course__btns--container">
-                <button class="course__btn btn btn-2 hover-slide-down">
+                <button data-path="lesson-2" class="course__btn btn btn-2 hover-slide-down modalBtn">
                   <span> записаться на курс </span>
                 </button>
                 <!-- <button class="course__btn">Посмотреть отзывы о курсе</button> -->
@@ -624,7 +624,7 @@
                 <!-- <p class="course__desc--txt"></p> -->
               </div>
               <div class="course__btns--container">
-                <button class="course__btn btn btn-2 hover-slide-down">
+                <button data-path="lesson-3" class="course__btn btn btn-2 hover-slide-down modalBtn">
                   <span> записаться на курс </span>
                 </button>
                 <!-- <button class="course__btn">Посмотреть отзывы о курсе</button> -->
@@ -705,7 +705,7 @@
                 <!-- <p class="course__desc--txt"></p> -->
               </div>
               <div class="course__btns--container">
-                <button class="course__btn btn btn-2 hover-slide-down">
+                <button data-path="lesson-4" class="course__btn btn btn-2 hover-slide-down modalBtn">
                   <span> записаться на курс </span>
                 </button>
                 <!-- <button class="course__btn">Посмотреть отзывы о курсе</button> -->
@@ -729,10 +729,10 @@
                 </div>
                 <div class="course__card-front-btn__container" >
 
-                  <button class="btn btn-3 hover-slide-right course__card--btn__more" >Подробнее<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="course__card--btn__more-svg" width="17" >
+                  <a href="instagram.com" class="btn btn-3 hover-slide-right course__card--btn__more" >Подробнее<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="course__card--btn__more-svg" width="17" >
                     <path fill-rule="evenodd" d="M16.72 7.72a.75.75 0 011.06 0l3.75 3.75a.75.75 0 010 1.06l-3.75 3.75a.75.75 0 11-1.06-1.06l2.47-2.47H3a.75.75 0 010-1.5h16.19l-2.47-2.47a.75.75 0 010-1.06z" clip-rule="evenodd" />
                   </svg>
-                  </button>
+                  </a>
               
                 </div>
               </div>
@@ -785,9 +785,9 @@
                 <!-- <p class="course__desc--txt"></p> -->
               </div>
               <div class="course__btns--container">
-                <a href="" class="course__btn btn btn-2 hover-slide-down">
+                <button data-path="lesson-5" class="course__btn btn btn-2 hover-slide-down">
                   <span> записаться на курс </span>
-                </a>
+                </button>
                 <!-- <button class="course__btn">Посмотреть отзывы о курсе</button> -->
                 <!-- <a class="course__link">Отзывы о курсе</a> -->
               </div>
@@ -1054,6 +1054,7 @@
                     <input type="hidden" name="_next" value="https://mrgreatprogrammer.github.io/sensei/pages/thanks.html">
                     <input type="hidden" name="_subject" value="New submission!">
                   <input type="hidden" name="_autoresponse" value="ваше собственное сообщение">
+
                   <div class="two__inp--container">
                     <div class="input--container">
                       <label for="fullName">Ваше имя:</label>
@@ -1090,6 +1091,155 @@
         </p>
       </div>
     </footer>
+
+    <div class="modals">
+      <div class="modal-overlay">
+        <div class="modal modal--1" data-target="lesson-1">
+          <div class="btn__exit--container">
+            <button class="btn__exit">x</button>
+          </div>
+          <div class="modal__contant">
+            <h5 class="course--title">Индивидуальные занятия онлайн</h5>
+            <form action="https://formsubmit.co/23c53104704b8608a1500240296d5584" method="post" class="modal-form"  >
+              <fieldset  >
+                <legend>Форма обратной свзязи</legend>
+                <input type="hidden" name="_next" value="https://mrgreatprogrammer.github.io/sensei/pages/thanks.html">
+                    <input type="hidden" name="_subject" value="New submission!">
+                    <input type="hidden" name="_autoresponse" value="ваше собственное сообщение">
+
+                    
+                    <div class="two__inp--container">
+                      <div class="input--container">
+                        <label for="fullName">Ваше имя:</label>
+                        <input class="inp" type="text" id="fullName" name="fullName" placeholder="Имя" />
+                      </div>
+                      <div class="input--container">
+                        <label for="email">Ваш email:</label>
+                        <input class="inp" type="email" id="email" name="email" placeholder="your@mail.com" />
+                      </div>
+                    </div>
+                    <input type="text" style="visibility: hidden;" id="course_name" name="course_name" value="Индивидуальные занятия онлайн" />
+                    <div class="contacts__form--btn__container">
+                      <button class=" btn__form btn btn-3 hover-border-4">
+                        <span>
+                          отправить
+                        </span>
+                      </button>
+                    </div>
+              </fieldset>
+            </form>
+          </div>
+        </div>
+        <div class="modal modal--2" data-target="lesson-2">
+          <div class="btn__exit--container">
+            <button class="btn__exit">x</button>
+          </div>
+          <div class="modal__contant">
+            <h5 class="course--title">Для навичков "Японский для души"</h5>
+            <form action="https://formsubmit.co/23c53104704b8608a1500240296d5584" class="modal-form" method="post" >
+              <fieldset  >
+                <legend>Форма обратной свзязи</legend>
+                <input type="hidden" name="_next" value="https://mrgreatprogrammer.github.io/sensei/pages/thanks.html">
+                    <input type="hidden" name="_subject" value="New submission!">
+                    <input type="hidden" name="_autoresponse" value="ваше собственное сообщение">
+
+                    <input type="hidden" id="course_name" name="course_name" value="Для навичков 'Японский для души'" />
+
+                  <div class="two__inp--container">
+                    <div class="input--container">
+                      <label for="fullName">Ваше имя:</label>
+                      <input class="inp" type="text" id="fullName" name="fullName" placeholder="Имя" />
+                    </div>
+                    <div class="input--container">
+                      <label for="email">Ваш email:</label>
+                      <input class="inp" type="email" id="email" name="email" placeholder="your@mail.com" />
+                    </div>
+                  </div>
+                    <div class="contacts__form--btn__container">
+                      <button class=" btn__form btn btn-3 hover-border-4">
+                        <span>
+                          отправить
+                        </span>
+                      </button>
+                    </div>
+              </fieldset>
+            </form>
+          </div>
+        </div>
+        <div class="modal modal--3" data-target="lesson-3">
+          <div class="btn__exit--container">
+            <button class="btn__exit">x</button>
+          </div>
+          <div class="modal__contant">
+            <h5 class="course--title">Груповое онлайн занятия</h5>
+            <form action="https://formsubmit.co/23c53104704b8608a1500240296d5584" class="modal-form" method="post" >
+              <fieldset  >
+                <legend>Форма обратной свзязи</legend>
+                <input type="hidden" name="_next" value="https://mrgreatprogrammer.github.io/sensei/pages/thanks.html">
+                    <input type="hidden" name="_subject" value="New submission!">
+                    <input type="hidden" name="_autoresponse" value="ваше собственное сообщение">
+
+                    <input type="hidden" id="course_name" name="course_name" value="Груповое онлайн занятия" />
+
+                  <div class="two__inp--container">
+                    <div class="input--container">
+                      <label for="fullName">Ваше имя:</label>
+                      <input class="inp" type="text" id="fullName" name="fullName" placeholder="Имя" />
+                    </div>
+                    <div class="input--container">
+                      <label for="email">Ваш email:</label>
+                      <input class="inp" type="email" id="email" name="email" placeholder="your@mail.com" />
+                    </div>
+                  </div>
+                    <div class="contacts__form--btn__container">
+                      <button class=" btn__form btn btn-3 hover-border-4">
+                        <span>
+                          отправить
+                        </span>
+                      </button>
+                    </div>
+              </fieldset>
+            </form>
+          </div>
+        </div>
+        <div class="modal modal--4" data-target="lesson-4">
+          <div class="btn__exit--container">
+            <button class="btn__exit">x</button>
+          </div>
+          <div class="modal__contant">
+            <h5 class="course--title">Ниндзя японского языка</h5>
+            <form action="https://formsubmit.co/23c53104704b8608a1500240296d5584" class="modal-form" method="post" >
+              <fieldset  >
+                <legend>Форма обратной свзязи</legend>
+                <input type="hidden" name="_next" value="https://mrgreatprogrammer.github.io/sensei/pages/thanks.html">
+                    <input type="hidden" name="_subject" value="New submission!">
+                    <input type="hidden" name="_autoresponse" value="ваше собственное сообщение">
+
+                    <input type="hidden" id="course_name" name="course_name" value="Ниндзя японского языка" />
+
+                  <div class="two__inp--container">
+                    <div class="input--container">
+                      <label for="fullName">Ваше имя:</label>
+                      <input class="inp" type="text" id="fullName" name="fullName" placeholder="Имя" />
+                    </div>
+                    <div class="input--container">
+                      <label for="email">Ваш email:</label>
+                      <input class="inp" type="email" id="email" name="email" placeholder="your@mail.com" />
+                    </div>
+                  </div>
+                    <div class="contacts__form--btn__container">
+                      <button class=" btn__form btn btn-3 hover-border-4">
+                        <span>
+                          отправить
+                        </span>
+                      </button>
+                    </div>
+              </fieldset>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <script
       src="https://code.jquery.com/jquery-2.2.0.min.js"
